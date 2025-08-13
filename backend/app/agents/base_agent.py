@@ -18,7 +18,7 @@ class AgentConcept:
 
         # Using gemini-1.5-pro-latest as it is a powerful and recent model.
         # The user mentioned gemini-2.5-pro, which is not a current model name.
-        self.llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro-latest", google_api_key=api_key, temperature=0.7)
+        self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=api_key, temperature=0.7)
 
     def create_chain(self, template: str, input_variables: list[str]):
         """Creates an LLMChain with a given prompt template."""
